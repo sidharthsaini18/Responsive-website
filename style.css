@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+nav{
+margin-left: 15rem;
+display: flex;
+}
+.name{
+    
+   display: inline-block;
+   color: purple;
+}
+
+
+.List{
+   
+   width: 50%;
+   margin-left: 20rem;
+}
+.List ul{
+   display: flex;
+   
+   justify-content: space-between;
+  
+}
+.List ul li{
+   
+    
+    text-decoration: none;
+    list-style: none;
+    color: rgb(90, 14, 90);
+    font-weight: 600;
+}
+.List ul li:hover{
+    color: rgb(223, 0, 223);
+}
+.List ul li select:hover{
+    color: rgb(223, 0, 223);
+}
+
+
+.List ul li select{
+border: none;
+color: rgb(90, 14, 90);
+font-weight: 600;
+}
+
+
+/* main function start here..... */
+main{
+    display: flex;
+    margin-top: 4rem;
+}
+
+.left{
+
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-end;
+}
+.text h1{
+   color: purple; 
+}
+.para1{
+    margin-top: 2rem;
+}
+
+.btn1{
+    border-radius: 55px;
+    background-color: purple;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    color: white;  
+    font-weight: 700;
+}
+.btn2{
+    border-radius: 55px;
+    background-color: rgb(208, 204, 204);
+    padding: 0.5rem;
+    margin-top: 2rem;
+  color: purple;
+  font-weight: 700;
+}
+.right{
+width: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+.right img{
+    height: 25rem;
+
+}
+@media screen and  (max-width:320px) {
+    body{
+        
+       
+    }
+    header{
+        
+    }
+   
+    .name {
+        display: flex;
+        justify-content: start;
+       
+    }
+    nav{
+   
+     text-align: center;
+     
+    }
+    ul{
+display: none;
+    }
+    li{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    .left{
+        
+         margin:0 10%;
+         width: 80%;
+    }
+     h1,p,button{
+      width: 100%;
+    }
+    .right {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+    }
+
+   
+}
+@media screen  and (max-width:375px){
+    nav{
+        margin-left:1rem
+    }
+    li{
+        display: none;
+    }
+    main{
+        flex-direction: column;
+    }
+    .left{
+   
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    }
+    .left h1,p,button{
+        
+    }
+    .right{
+       
+        width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    }
+}
+@media screen  and (max-width:425px){
+    nav{
+    margin-left: 1rem;
+    }
+    ul li{
+        display: none;
+
+    }
+    main{
+flex-direction: column;
+    }
+    .left{
+width: 100%;
+align-items: center;
+    }
+    .left h1,p{
+        
+        
+    }
+   
+    .right{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    }
+}
+@media screen and (max-width:945px){
+   ul li{
+        display: none;
+    }
+    nav{
+        margin-left: 1rem;
+    }
+    main{
+        flex-direction: column;
+    }
+    .left{
+      width: 100%;
+      align-items: center;
+    }
+    .right{
+        width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+    }
+}
